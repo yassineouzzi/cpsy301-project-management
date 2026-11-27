@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Chinook Community Pantry Inventory Management System" company="" webLink="http://" view-date="2026-08-02" view-index="0" gantt-divider-location="827" resource-divider-location="300" version="3.3.3330" locale="en_CA">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd15" name="Notes" width="20" order="0"/>
+        <field id="tpd3" name="Name" width="266" order="0"/>
+        <field id="tpd4" name="Begin date" width="100" order="1"/>
+        <field id="tpd5" name="End date" width="100" order="2"/>
+        <field id="tpd6" name="Duration" width="67" order="3"/>
+        <field id="tpd11" name="Outline number" width="131" order="4"/>
+        <field id="tpd9" name="Predecessors" width="162" order="5"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="39604b70edd146bcacfb318f0358cdee" name="Initiate and Plan Project" meeting="false" start="2026-08-03" duration="10" complete="0" expand="true">
+            <task id="1" uid="9e13f7a0348d47bdae2fac7f752d2136" name="Define project charter, scope, and team roles" meeting="false" start="2026-08-03" duration="3" complete="0" expand="true">
+                <depend id="2" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2" uid="e7905592de8143efb82534a8b78d29a2" name="Interview pantry staff and shadow volunteer shifts" meeting="false" start="2026-08-06" duration="3" complete="0" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" uid="c327057b30004ccb93ac07626469da3b" name="Document functional requirements and audit donated hardware" meeting="false" start="2026-08-11" duration="2" complete="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" uid="61f5dd517ddb499999d74e4039e9d822" name="Assess project risks and finalize mitigation plan" meeting="false" start="2026-08-13" duration="2" complete="0" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" uid="8a28a1eb90c5469d81670896dd806e9e" name="M: Project Plan Approved" meeting="true" start="2026-08-17" duration="0" complete="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="6" uid="4343e7a51ea6428c8b17cded8e71b373" name="Design UI/UX and Obtain Board Approval" meeting="false" start="2026-08-17" duration="11" complete="0" expand="true">
+            <task id="7" uid="e27c3e6a44a8440ab5e29cb160256214" name="Map donation intake, stock check, and hamper pick-up workflows" meeting="false" start="2026-08-17" duration="3" complete="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" uid="937657304f494358bd64a3dbef20f43e" name="Create low-literacy Volunteer and Staff dashboard mock-ups" meeting="false" start="2026-08-20" duration="5" complete="0" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" uid="ed15fbea199e4928a39f8e8ef41aa6a1" name="Validate prototype usability with staff and volunteers" meeting="false" start="2026-08-27" duration="2" complete="0" expand="true">
+                <depend id="10" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" uid="8263efb4f1764843bf0d7740392f3e00" name="Submit UI/UX package to Pantry Board" meeting="false" start="2026-08-31" duration="1" complete="0" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" uid="7bc789372d644e9986ca1b07b5abd075" name="M: Board Design Approval" meeting="true" start="2026-09-01" duration="0" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Yassine Ouzzi" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Ojeifo Alexander Akere" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Ragy Ashraf Helmy Fouad Meseha" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="1" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
