@@ -137,8 +137,63 @@
             </task>
             <task id="31" uid="f49d3600331248b58b6b4f220180dd22" name="Development Milestones" meeting="false" start="2026-09-17" duration="10" complete="0" expand="true">
                 <task id="32" uid="a0b9b01926164081a5401e4f5e3fd5a6" name="Milestone: Pre-Thanksgiving Core" meeting="false" start="2026-09-17" duration="1" complete="0" expand="true"/>
-                <task id="33" uid="d5079a9e9f0c4ca999100095d024f0e8" name="Milestone: Development Code Complete" meeting="false" start="2026-09-30" duration="1" complete="0" expand="true"/>
+                <task id="33" uid="d5079a9e9f0c4ca999100095d024f0e8" name="Milestone: Development Code Complete" meeting="false" start="2026-09-30" duration="1" complete="0" expand="true">
+                    <depend id="34" type="2" difference="0" hardness="Strong"/>
+                </task>
             </task>
+        </task>
+        <task id="51" uid="5f06c58610af49e3b48c06700b552027" name="Testing and Quality Assurance" meeting="false" start="2026-10-01" duration="30" complete="0" expand="true">
+            <task id="34" uid="38f9dbcde3674fcb9456b9603a797b5e" name="Prepare test plan, test cases, and test data" meeting="false" start="2026-10-01" duration="2" complete="0" expand="true">
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="35" uid="7516788accff4338be6271aae1ba7a50" name="Unit testing of backend, inventory logic, and modules" meeting="false" start="2026-10-05" duration="5" complete="0" expand="true">
+                <depend id="36" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="36" uid="03c92dd049fb4e8fac0d4f6a5595d9f1" name="Integration testing of end-to-end workflows" meeting="false" start="2026-10-12" duration="5" complete="0" expand="true">
+                <depend id="37" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="37" uid="c169ad7e6ce94a89b97958677509c5c6" name="Defect fixing and regression testing" meeting="false" start="2026-10-19" duration="5" complete="0" expand="true">
+                <depend id="38" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="38" uid="f540547962924b5e8ee078f37b6cd91c" name="Trial data migration and device performance testing" meeting="false" start="2026-10-26" duration="5" complete="0" expand="true">
+                <depend id="39" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="39" uid="e35a4a6067694d1784341d00408ae45f" name="M: System Testing Complete" meeting="true" start="2026-11-02" duration="0" complete="0" expand="true">
+                <depend id="40" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="40" uid="f94fd6eb420f438f82b7e520d9df816f" name="User Acceptance Testing (UAT) with staff and volunteers" meeting="false" start="2026-11-02" duration="5" complete="0" expand="true">
+                <depend id="41" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="41" uid="ba7f45ff8e9d4e9f94e0672357eb78ce" name="Resolve UAT feedback and retest" meeting="false" start="2026-11-09" duration="3" complete="0" expand="true">
+                <depend id="42" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="42" uid="119351bfe4b74ff5adac18b20f7ad6e3" name="M: UAT Sign-off" meeting="true" start="2026-11-12" duration="0" complete="0" expand="true">
+                <depend id="43" type="2" difference="0" hardness="Strong"/>
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="52" uid="c76a992fb51448e796d1f9d49df8f8ac" name="Deployment, Training and Go-Live" meeting="false" start="2026-11-12" duration="13" complete="0" expand="true">
+            <task id="43" uid="cfe1da1b6de2448ba646d0f2daba8116" name="Deploy to production environment" meeting="false" start="2026-11-12" duration="2" complete="0" expand="true">
+                <depend id="46" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="44" uid="16324089e88a4940b028e879c47a96ce" name="Create training materials" meeting="false" start="2026-11-12" duration="2" complete="0" expand="true">
+                <depend id="46" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="45" uid="c88a7a74dc0547b6b15c8788f559610e" name="Volunteer and Staff Training Window" meeting="false" start="2026-11-16" duration="10" complete="0" expand="true">
+                <task id="46" uid="9d54c004d75a4ad29a0b11eed6a782a6" name="Train pantry staff" meeting="false" start="2026-11-16" duration="2" complete="0" expand="true">
+                    <depend id="47" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="47" uid="574ce62e588849129898a55d3fdaeac0" name="Run volunteer training sessions" meeting="false" start="2026-11-18" duration="5" complete="0" expand="true">
+                    <depend id="48" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="48" uid="db66835dbde94aa68d2254e4ff13d648" name="Supervised practice and parallel run" meeting="false" start="2026-11-25" duration="3" complete="0" expand="true">
+                    <depend id="49" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="49" uid="53ec557568914efcbe452e32fc74a977" name="Final data migration and go-live readiness check" meeting="false" start="2026-11-30" duration="1" complete="0" expand="true">
+                <depend id="50" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="50" uid="63291ac240734cc4a26f14bdf34cd758" name="M: System Go-Live" meeting="true" start="2026-12-01" duration="0" complete="0" expand="true"></task>
         </task>
     </tasks>
     <resources>
@@ -157,6 +212,23 @@
         <allocation task-id="9" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="10" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="11" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="34" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="36" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="37" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="38" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="39" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="40" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="41" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="42" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="43" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="44" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="45" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="46" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="47" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="48" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
     </allocations>
     <vacations/>
     <previous/>
