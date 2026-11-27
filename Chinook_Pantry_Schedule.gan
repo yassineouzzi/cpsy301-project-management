@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Chinook Community Pantry Inventory Management System" company="" webLink="http://" view-date="2026-08-02" view-index="0" gantt-divider-location="827" resource-divider-location="300" version="3.3.3330" locale="en_CA">
+<?xml version="1.0" encoding="UTF-8"?><project name="Chinook Community Pantry Inventory Management System" company="" webLink="http://" view-date="2026-09-17" view-index="0" gantt-divider-location="724" resource-divider-location="300" version="3.3.3330" locale="en_US">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd15" name="Notes" width="20" order="0"/>
-        <field id="tpd3" name="Name" width="266" order="0"/>
-        <field id="tpd4" name="Begin date" width="100" order="1"/>
-        <field id="tpd5" name="End date" width="100" order="2"/>
-        <field id="tpd6" name="Duration" width="67" order="3"/>
-        <field id="tpd11" name="Outline number" width="131" order="4"/>
-        <field id="tpd9" name="Predecessors" width="162" order="5"/>
+        <field id="tpd3" name="Name" width="228" order="0"/>
+        <field id="tpd4" name="Begin date" width="86" order="1"/>
+        <field id="tpd5" name="End date" width="86" order="2"/>
+        <field id="tpd6" name="Duration" width="57" order="3"/>
+        <field id="tpd11" name="Outline number" width="111" order="4"/>
+        <field id="tpd9" name="Predecessors" width="140" order="5"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="filter.dueTodayTasks" value="false"/>
         <option id="filter.overdueTasks" value="false"/>
@@ -71,7 +71,74 @@
             <task id="10" uid="8263efb4f1764843bf0d7740392f3e00" name="Submit UI/UX package to Pantry Board" meeting="false" start="2026-08-31" duration="1" complete="0" expand="true">
                 <depend id="11" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="11" uid="7bc789372d644e9986ca1b07b5abd075" name="M: Board Design Approval" meeting="true" start="2026-09-01" duration="0" complete="0" expand="true"/>
+            <task id="11" uid="7bc789372d644e9986ca1b07b5abd075" name="M: Board Design Approval" meeting="true" start="2026-09-01" duration="0" complete="0" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="12" uid="9b15013794e84ccd8634caba3a253d54" name="System Development and Coding" meeting="false" start="2026-08-05" duration="41" complete="0" expand="true">
+            <task id="13" uid="fb0cbb74b0974ecc86e58c43cc5080a2" name="Database and Backend Infrastructure" meeting="false" start="2026-08-05" duration="27" complete="0" expand="true">
+                <task id="14" uid="37eeb5b735b24a39a7b1ba7418122527" name="Cloud Environment, DB setup and role based auth" meeting="false" start="2026-09-01" duration="2" complete="0" expand="true">
+                    <depend id="15" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="15" uid="ed2a0f6a76304c31b27243f881f95c9f" name="Relational DB schema" meeting="false" start="2026-09-03" duration="3" complete="0" expand="true">
+                    <depend id="16" type="2" difference="0" hardness="Strong"/>
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="16" uid="7fba652677804778b581b81d1249e991" name="RESTful API endpoints and validation logic" meeting="false" start="2026-09-08" duration="3" complete="0" expand="true">
+                    <depend id="22" type="2" difference="0" hardness="Strong"/>
+                    <depend id="24" type="2" difference="0" hardness="Strong"/>
+                    <depend id="25" type="2" difference="0" hardness="Strong"/>
+                    <depend id="32" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="17" uid="3750ec5e5bc047c89497db74d5e24584" name="Legacy spreadsheet and client data import scripts" meeting="false" start="2026-08-05" duration="2" complete="0" expand="true">
+                    <depend id="33" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="18" uid="ef5be8215f0940ef94923431973da777" name="Core Inventory, Expiry and Alert Logic" meeting="false" start="2026-09-08" duration="7" complete="0" expand="true">
+                <task id="19" uid="07e4033c964f45048bcbbeac98aefd16" name="Batch level stock intake" meeting="false" start="2026-09-08" duration="3" complete="0" expand="true">
+                    <depend id="20" type="2" difference="0" hardness="Strong"/>
+                    <depend id="26" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="20" uid="5ccfa17f323f480d973a4276b0b6298d" name="FIFO sorting and best before date tracking" meeting="false" start="2026-09-11" duration="2" complete="0" expand="true">
+                    <depend id="21" type="2" difference="0" hardness="Strong"/>
+                    <depend id="29" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="21" uid="f5a5edbf69714414ba44ac86a608cb17" name="Low stock and near expiry alert engine" meeting="false" start="2026-09-15" duration="2" complete="0" expand="true">
+                    <depend id="30" type="2" difference="0" hardness="Strong"/>
+                    <depend id="32" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="22" uid="fccafb5486644921a72ca93868b5cec8" name="Board and funder inventory reporting module" meeting="false" start="2026-09-11" duration="3" complete="0" expand="true">
+                    <depend id="30" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="23" uid="1d078a10e7d040d5bfc55af4d717a031" name="Donor, Household and Hamper Modules" meeting="false" start="2026-09-11" duration="6" complete="0" expand="true">
+                <task id="24" uid="c9c5f6ea5b02446aaa693036c6b5f7a3" name="Donor directory and donation intake logging" meeting="false" start="2026-09-11" duration="3" complete="0" expand="true">
+                    <depend id="29" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="25" uid="112e7b7675b24516a80f28dec983f26c" name="Client household registration" meeting="false" start="2026-09-11" duration="3" complete="0" expand="true">
+                    <depend id="26" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="26" uid="671cf91012c04ae3be027018bf515aca" name="Pick up appointment scheduler" meeting="false" start="2026-09-16" duration="3" complete="0" expand="true">
+                    <depend id="30" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="27" uid="87c3a21349974a208a9e188b188e772a" name="Frontend User Interfaces (Staff and Volunteer)" meeting="false" start="2026-09-01" duration="21" complete="0" expand="true">
+                <task id="28" uid="e20edcb8942140b5ad1a2be82ae3f429" name="Responsive laptop UI accessible components" meeting="false" start="2026-09-01" duration="4" complete="0" expand="true">
+                    <depend id="29" type="2" difference="0" hardness="Strong"/>
+                    <depend id="32" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="29" uid="cdc4b48133a344558008651bc6650434" name="Volunteer views (Intake, Stock Check, Pick Up check in)" meeting="false" start="2026-09-16" duration="5" complete="0" expand="true">
+                    <depend id="30" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="30" uid="7d27d27384fd448199d9865f3ac1d9b5" name="Staff Dashboard" meeting="false" start="2026-09-23" duration="5" complete="0" expand="true">
+                    <depend id="33" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="31" uid="f49d3600331248b58b6b4f220180dd22" name="Development Milestones" meeting="false" start="2026-09-17" duration="10" complete="0" expand="true">
+                <task id="32" uid="a0b9b01926164081a5401e4f5e3fd5a6" name="Milestone: Pre-Thanksgiving Core" meeting="false" start="2026-09-17" duration="1" complete="0" expand="true"/>
+                <task id="33" uid="d5079a9e9f0c4ca999100095d024f0e8" name="Milestone: Development Code Complete" meeting="false" start="2026-09-30" duration="1" complete="0" expand="true"/>
+            </task>
         </task>
     </tasks>
     <resources>
